@@ -1,0 +1,40 @@
+.app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-container {
+  background-image: url('./resources/img/lima.jpg');
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.app-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #a64bf4; 
+  background: -moz-linear-gradient(top, #21d4fd 0%, #b721ff 100%);
+  background: -webkit-linear-gradient(top, #21d4fd 0%,#b721ff 100%); 
+  background: linear-gradient(to top, #21d4fd 0%,#b721ff 100%);
+  opacity: 0.9;
+}
