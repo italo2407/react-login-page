@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './login.css';
-import Tooltip from '../tooltip';
 
 const Avatar = ({foto,userName}) => (
 		<div style={{width:"100%"}}>
